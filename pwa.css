@@ -1,0 +1,57 @@
+.pwa-status {
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 5px 16px;
+  color: var(--md-sys-color-on-surface-variant);
+  background: var(--md-sys-color-surface-container);
+  font-size: 12px;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.pwa-status.offline {
+  color: var(--md-sys-color-on-primary-container);
+  background: var(--md-sys-color-primary-container);
+}
+
+.pwa-install-button {
+  flex: none;
+  min-height: 28px;
+  padding: 3px 12px;
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: 999px;
+  color: var(--md-sys-color-on-surface);
+  background: transparent;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pwa-install-button:hover {
+  background: var(--md-sys-color-surface-container-highest);
+}
+
+.pwa-install-button[hidden] {
+  display: none;
+}
+
+.titlebar-controls {
+  display: none !important;
+}
+
+.modal-backdrop#tools-install-modal {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  .pwa-status {
+    justify-content: space-between;
+    gap: 8px;
+    padding-inline: 10px;
+    font-size: 10px;
+    text-align: left;
+  }
+}
